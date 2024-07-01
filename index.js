@@ -1348,8 +1348,8 @@ module.exports = {
     // https://eslint.org/docs/rules/spaced-comment
     'spaced-comment': ['error', 'always', {
       line: {
-        exceptions: ['-', '+'],
-        markers: ['=', '!', '/'], // space here to support sprockets directives, slash for TS /// comments
+        exceptions: ['-', '+', '/'],
+        markers: ['#region', '#endregion', 'region', 'endregion', '=', '!', '/'], // space here to support sprockets directives, slash for TS /// comments
       },
       block: {
         exceptions: ['-', '+'],
@@ -1414,17 +1414,7 @@ module.exports = {
 
     //#endregion
 
-    // #region [ DOS дополнительные настройки ]
-
-    'spaced-comment': [
-      'error',
-      'always',
-      {
-        line: {
-          markers: ['#region', '#endregion', 'region', 'endregion'],
-        },
-      },
-    ],
+    // #region [ дополнительные настройки ]
 
     // Vue
     'vue/component-name-in-template-casing': [
