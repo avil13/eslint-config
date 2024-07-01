@@ -1,0 +1,25 @@
+{
+  "name": "@avil13/eslint-config",
+  "version": "1.0.0",
+  "description": "Плагин для eslint с набором правил для ts и vue проектов",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslint-plugin",
+    "eslint-rule"
+  ],
+  "peerDependencies": {
+    "@vue/eslint-config-typescript": "*"
+  }
+}
