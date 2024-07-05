@@ -946,7 +946,8 @@ module.exports = {
 
     // this option sets a specific tab width for your code
     // https://eslint.org/docs/rules/indent
-    indent: ['error', 2, {
+    indent: 'off',
+    '@typescript-eslint/indent': ['error', 2, {
       SwitchCase: 1,
       VariableDeclarator: 1,
       outerIIFEBody: 1,
@@ -1391,7 +1392,8 @@ module.exports = {
     'no-label-var': 'error',
 
     // disallow declaration of variables already declared in the outer scope
-    'no-shadow': 'error',
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
 
     // disallow shadowing of names such as arguments
     'no-shadow-restricted-names': 'error',
@@ -1407,7 +1409,8 @@ module.exports = {
     'no-undefined': 'off',
 
     // disallow declaration of variables that are not used in the code
-    'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
 
     // disallow use of variables before they are defined
     'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
