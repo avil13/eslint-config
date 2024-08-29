@@ -1049,11 +1049,12 @@ module.exports = {
     'max-len': ['error', 80, 2, {
       // code: 120,
       ignoreComments: true,
-      ignoreHTMLAttributeValues: true,
+      // ignoreHTMLAttributeValues: true, // vue
       ignoreStrings: true,
       ignoreTemplateLiterals: true,
       ignoreTrailingComments: true,
       ignoreUrls: true,
+      ignoreRegExpLiterals: true,
     }],
 
     // specify the max number of lines in a file
@@ -1435,6 +1436,18 @@ module.exports = {
     //   {
     //     registeredComponentsOnly: false,
     //     ignores: [],
+    //   },
+    // ],
+    // 'vue/max-len': [
+    //   'error',
+    //   {
+    //     code: 80,
+    //     ignoreComments: true,
+    //     ignoreHTMLAttributeValues: true,
+    //     ignoreStrings: true,
+    //     ignoreTemplateLiterals: true,
+    //     ignoreTrailingComments: true,
+    //     ignoreUrls: true,
     //   },
     // ],
 

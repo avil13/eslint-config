@@ -1,6 +1,6 @@
 {
   "name": "@avil13/eslint-config",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Плагин для eslint с набором правил для ts и vue проектов",
   "main": "index.js",
   "exports": {
