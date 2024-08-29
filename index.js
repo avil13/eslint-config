@@ -1,4 +1,7 @@
+const { name, version } = require('./package.json');
+
 module.exports = {
+  meta: { name, version },
   rules: {
     //#region [ best-practices.js ]
 
@@ -1046,12 +1049,14 @@ module.exports = {
 
     // specify the maximum length of a line in your program
     // https://eslint.org/docs/rules/max-len
-    'max-len': ['error', 100, 2, {
-      ignoreUrls: true,
-      ignoreComments: false,
-      ignoreRegExpLiterals: true,
+    'max-len': ['error', 80, 2, {
+      // code: 120,
+      ignoreComments: true,
+      ignoreHTMLAttributeValues: true,
       ignoreStrings: true,
       ignoreTemplateLiterals: true,
+      ignoreTrailingComments: true,
+      ignoreUrls: true,
     }],
 
     // specify the max number of lines in a file
@@ -1420,27 +1425,21 @@ module.exports = {
     // #region [ дополнительные настройки ]
 
     // Vue
-    'vue/component-name-in-template-casing': [
-      'error',
-      'PascalCase',
-      {
-        registeredComponentsOnly: false,
-        ignores: [],
-      },
-    ],
-
-    'vue/max-len': [
-      'error',
-      {
-        code: 120,
-        ignoreComments: true,
-        ignoreHTMLAttributeValues: true,
-        ignoreStrings: true,
-        ignoreTemplateLiterals: true,
-        ignoreTrailingComments: true,
-        ignoreUrls: true,
-      },
-    ],
+    /**
+     * package.json
+     *
+     * "peerDependencies": {
+     *  "@vue/eslint-config-typescript": "*"
+     * },
+     */
+    // 'vue/component-name-in-template-casing': [
+    //   'error',
+    //   'PascalCase',
+    //   {
+    //     registeredComponentsOnly: false,
+    //     ignores: [],
+    //   },
+    // ],
 
     // #endregion
   },

@@ -1,6 +1,6 @@
 {
   "name": "@avil13/eslint-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Плагин для eslint с набором правил для ts и vue проектов",
   "main": "index.js",
   "exports": {
@@ -19,9 +19,6 @@
     "eslint-plugin",
     "eslint-rule"
   ],
-  "peerDependencies": {
-    "@vue/eslint-config-typescript": "*"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/avil13/eslint-config"
