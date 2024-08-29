@@ -1,7 +1,4 @@
-const { name, version } = require('./package.json');
-
 module.exports = {
-  meta: { name, version },
   rules: {
     //#region [ best-practices.js ]
 
